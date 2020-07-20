@@ -13,7 +13,7 @@ class MyCustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _onButtonPressed(context),
+      onTap: () => onButtonPressed(context),
       child: Opacity(
         opacity: 0.9,
         child: Container(
@@ -53,7 +53,7 @@ class MyCustomButton extends StatelessWidget {
     );
   }
 
-  void _onButtonPressed(BuildContext context) {
+  void onButtonPressed(BuildContext context) {
     showModalBottomSheet(
       context: context,
       builder: (context) {
