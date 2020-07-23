@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "17964223609",
+    "firebase_url": "https://plantado.firebaseio.com",
+    "project_id": "plantado",
+    "storage_bucket": "plantado.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17964223609:android:cd7889a68fa97f6cca58a8",
+        "android_client_info": {
+          "package_name": "com.princeappstudio.plantado"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17964223609-dl0ckidirpmqhr8hae9mp3icena2m3mo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-mOssB0y4gicX_yrYxOlA63sbxGp8CgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17964223609-dl0ckidirpmqhr8hae9mp3icena2m3mo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

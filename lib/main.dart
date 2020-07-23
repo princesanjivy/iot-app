@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'MyCustomButton.dart';
 
 void main() {
@@ -36,7 +35,7 @@ class SplashScreen extends StatelessWidget {
           ),
         ),
         child: Scaffold(
-        backgroundColor: Colors.transparent,
+          backgroundColor: Colors.transparent,
           body: Center(
             child: Column(
               children: <Widget>[
@@ -91,7 +90,10 @@ class SplashScreen extends StatelessWidget {
                           ),
                           child: Text(
                             "Get Started",
-                            style: TextStyle(fontSize: 18, color: Colors.white,),
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.white,
+                            ),
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -137,7 +139,7 @@ class MainMenu extends StatelessWidget {
           ),
           brightness: Brightness.dark,
         ),
-      backgroundColor: Colors.transparent,
+        backgroundColor: Colors.transparent,
         drawer: Drawer(
           child: ListView(
             children: <Widget>[
@@ -162,13 +164,13 @@ class MainMenu extends StatelessWidget {
                 MyCustomButton(
                   buttonName: "Temperature",
                   image: "temperature.png",
-                  value: "29",
+                  // value: "29",
                   color: 0xE64057F5,
                 ),
                 MyCustomButton(
                   buttonName: "Humidity",
                   image: "cloud-rain.png",
-                  value: "61",
+                  // value: "61",
                   color: 0xE6FEABD7,
                 ),
                 MyCustomButton(
@@ -297,18 +299,19 @@ class AboutScreen extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(20),
           child: SingleChildScrollView(
-            child: Text("Welcome to Plantado - An IOT based plant monitoring system.\n\n"
-                  "Monitor the sunlight and water content of your plants and get alerts when you need to act.\n\n"
-                  "Description:\n\n"
-                "In today's Busy world , we forget to Nourish and water plants that makes our home clean and organic. Think about it what if your plant are able to tell you when they are happy and when they require proper attention . It would be Great right! It would be really helpful if we get a notification on our phones about our plant's health and needs . On considering this,we proposed the idea of building an iot based application which can monitor your plants in real time.\n\n"
-                "It uses the following:\n\n"
-                "* Arduino UNO(an open source hardware / platdorm for projects)\n"
-                "* DHT11 : Temperature and Humidity sensor\n"
-                "* YL - 38 + YL - 69 Soil moisture sensor\n"
-                "* Water Motor Pump - For watering the plant\n\n"
-                "Main Objective : Monitoring the plant health status using a set of sensors.\n\n"
-                "How it works:\n\n"
-                "The above mentioned sensors are connected to the Arduino . And these sensors lively measures the temperature,humidity and soil moisture content and sends the data lively to the Firebase cloud and the app receives the information from it since it is integrated.",
+            child: Text(
+              "Welcome to Plantado - An IOT based plant monitoring system.\n\n"
+              "Monitor the sunlight and water content of your plants and get alerts when you need to act.\n\n"
+              "Description:\n\n"
+              "In today's Busy world , we forget to Nourish and water plants that makes our home clean and organic. Think about it what if your plant are able to tell you when they are happy and when they require proper attention . It would be Great right! It would be really helpful if we get a notification on our phones about our plant's health and needs . On considering this,we proposed the idea of building an iot based application which can monitor your plants in real time.\n\n"
+              "It uses the following:\n\n"
+              "* Arduino UNO(an open source hardware / platdorm for projects)\n"
+              "* DHT11 : Temperature and Humidity sensor\n"
+              "* YL - 38 + YL - 69 Soil moisture sensor\n"
+              "* Water Motor Pump - For watering the plant\n\n"
+              "Main Objective : Monitoring the plant health status using a set of sensors.\n\n"
+              "How it works:\n\n"
+              "The above mentioned sensors are connected to the Arduino . And these sensors lively measures the temperature,humidity and soil moisture content and sends the data lively to the Firebase cloud and the app receives the information from it since it is integrated.",
               style: TextStyle(fontSize: 16, color: Colors.black),
             ),
           ),
