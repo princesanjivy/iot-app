@@ -6,6 +6,6 @@ IoT based smart plant monitoring system application
 # Design
 Designed in Figma for Phase-I of Hackathon
 
-[Desgin files] (https://www.figma.com/file/wRmhb3fU2kIqmtJ2kSHqs5/IoT-App?node-id=18%3A0)
+[Desgin files]( https://www.figma.com/file/wRmhb3fU2kIqmtJ2kSHqs5/IoT-App?node-id=18%3A0 )
 
 
